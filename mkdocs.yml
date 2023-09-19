@@ -1,0 +1,98 @@
+site_name: Total Miner Creative Documentation
+repo_url: https://github.com/galactic2005/totalminer-creative-docs
+repo_name: totalminer-creative-docs
+  
+theme:
+  name: material
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.footer
+    - navigation.indexes
+    - search.highlight
+    - search.share
+  palette: 
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+
+markdown_extensions:
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+  - tags
+
+extra:
+  social:
+    - icon: fontawesome/brands/steam 
+      link: https://steamcommunity.com/app/347600
+      name: Total Miner Steam Community Hub
+    - icon: fontawesome/brands/discord 
+      link: https://discord.gg/totalminer
+      name: Total Miner Discord Server
+    - icon: simple/fandom
+      link: https://totalminer.fandom.com/
+      name: Total Miner Wiki
+
+nav:
+  - Home: "index.md"
+  - TMScript:
+    - "tmscript/index.md"
+    - "tmscript/syntax.md"
+    - "tmscript/history-vs-var.md"
+    - Commands:
+      - "tmscript/commands/index.md"
+      - Query Commands:
+        - "tmscript/commands/query-commands/index.md"
+        - HasSkill: "tmscript/commands/query-commands/hasskill.md"
+        - IsClan: "tmscript/commands/query-commands/isclan.md"
+        - IsClock: "tmscript/commands/query-commands/isclock.md"
+        - IsDayTime: "tmscript/commands/query-commands/isdaytime.md"
+        - IsFiniteResources: "tmscript/commands/query-commands/isfiniteresources.md"
+        - IsSkills: "tmscript/commands/query-commands/isskills.md"
+        - IsTime: "tmscript/commands/query-commands/istime.md"
+      - CaveIn: "tmscript/commands/cavein.md"
+      - Clan: "tmscript/commands/clan.md"
+      - CopyBlock: "tmscript/commands/copyblock.md"
+      - HealthMod: "tmscript/commands/healthmod.md"
+      - History: "tmscript/commands/history.md"
+      - Input: "tmscript/commands/input.md"
+      - Inventory: "tmscript/commands/inventory.md"
+      - Kick: "tmscript/commands/kick.md"
+      - Loop: "tmscript/commands/loop.md"
+      - Marker: "tmscript/commands/marker.md"
+      - OpenBlock: "tmscript/commands/openblock.md"
+      - Random: "tmscript/commands/random.md"
+      - ReplaceRegion: "tmscript/commands/replaceregion.md"
+      - Skill: "tmscript/commands/skill.md"
+      - SkillXP: "tmscript/commands/skillxp.md"
+      - var: "tmscript/commands/var.md"
+      - Wait: "tmscript/commands/wait.md"
+      - Waypoint: "tmscript/commands/waypoint.md"
+  - Documentation:
+    - "documentation/index.md"
+    - Clan Banners: "documentation/clan-banners.md"
+    - Clock Time: "documentation/clock-time.md"
+    - Permissions: "documentation/permissions.md"
+    - Skills System: "documentation/skills-system.md"
